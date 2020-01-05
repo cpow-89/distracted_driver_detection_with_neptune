@@ -17,6 +17,20 @@ I tracked all my experiments with the [neptune package](https://neptune.ml/) pac
 If you are interested in how I did that feel free to follow along.
 
 
+## Dataset:
+The [state-farm-distracted-driver-detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection) dataset contains driver images from 10 classes:
+
+    "c0": "safe driving",
+    "c1": "texting - right",
+    "c2": "talking on the phone - right",
+    "c3": "texting - left",
+    "c4": "talking on the phone - left",
+    "c5": "operating the radio",
+    "c6": "drinking",
+    "c7": "reaching behind",
+    "c8": "hair and makeup",
+    "c9": "talking to passenger"
+
 ## Requirements:
 
 - download the [state-farm-distracted-driver-detection](https://www.kaggle.com/c/state-farm-distracted-driver-detection) dataset
@@ -62,3 +76,8 @@ If you want to train a new model on the clean_dataset use the [Train Resnet Mode
 
 ##### Step 7 Investigate your model
 If you want to investigate your model further with the help of the [shap package](https://github.com/slundberg/shap) and [captum package](https://github.com/pytorch/captum) you can do so by using the [Inspect Best Model](https://github.com/cpow-89/distracted_driver_detection_with_neptune/blob/master/Inspect%20Best%20Model.ipynb) notebook.
+
+
+### Final Thoughts
+
+I learned a lot during this project. Especially by trying to get [fast ai](https://www.fast.ai/) work with the [shap package](https://github.com/slundberg/shap) and [captum package](https://github.com/pytorch/captum). I also really learned to appreciate the [neptune package](https://neptune.ml/) package for tracking my project and statistics. That saved me a lot of time. 
